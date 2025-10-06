@@ -1,0 +1,109 @@
+@import url(../../../../../common/reset.css);
+@import url(./fonts.css);
+@import url(./color.css);
+
+body {
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
+
+.container {
+    max-width: 1440px;
+    background-color: var(--color-grey-900);
+    margin: 100px auto;
+    padding: 200px 16px;
+    border-radius: 12px;
+}
+
+/* ==================== Card ==================== */
+
+.card {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    border-radius: 16px;
+
+    background-color: var(--color-grey-800);
+    text-align: center;
+}
+
+.avatar {
+    width: 160px;
+    display: inline-block;
+    border-radius: 999px;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+
+.address {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--accent-color);
+    padding-bottom: 28px;
+}
+
+.info {
+    font-size: 14px;
+    padding-bottom: 24px;
+}
+
+.social-media-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-media-box li {
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--color-grey-700);
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.social-media-box li a {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.social-media-box li, .social-media-box li a {
+    transition: all .3s ease;
+}
+
+/* ==================== hover ==================== */
+.social-media-box li:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+.social-media-box li:hover a{
+    color: var(--color-grey-900);
+}
+/* ==================== 版權說明 ==================== */
+.attribution {
+    margin-bottom: 20px;
+    color: var(--color-grey-900);
+}
+
+.attribution a {
+    color: #6d6d6d;
+}
+
+/* ==================== RWD ==================== */
+@media screen and (max-width: 431px) {
+    .name {
+        font-size: 24px;
+    }
+    .address {
+        font-size: 14px;
+    }
+    .info {
+        font-size: 12px;
+    }
+}
