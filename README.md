@@ -20,11 +20,18 @@
 
 ``` 
 frontend-practice/
-├─ coding-challenges/     # 各種演算法與刷題練習（LeetCode / Codewars / JS 題）
-├─ HTML-CSS/              # HTML / CSS 相關練習（排版、動畫、RWD）
-│  ├─ animation-test/     # 動畫效果練習
-│  └─ responsive-layout/  # 響應式版面排版練習
-├─ JavaScript/            # JS 小功能、小作品（例如計算機、FAQ、表單處理）
+├─ coding-challenges/           # 各種練習與刷題
+│  ├─ basic-js-practice/        # JS 基礎語法與練習題
+│  └─ codewars/                 # Codewars 題目解法（Fundamentals 類別）
+│
+├─ layout-challenges/           # 切版挑戰練習（Flex、Grid、排版設計）
+│
+├─ HTML-CSS/                    # HTML / CSS 相關練習（排版、動畫、RWD）
+│  ├─ animation-test/           # 動畫效果練習
+│  └─ responsive-layout/        # 響應式排版練習
+│
+├─ JavaScript/                  # JS 小作品（例如計算機、FAQ、互動功能）
+│
 ├─ .gitignore
 ├─ LICENSE
 └─ README.md
