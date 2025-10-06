@@ -1,3 +1,24 @@
+# ---------------------------------
+#       Frontend Mentor 專用規則
+# ---------------------------------
+# 不上傳官方設計稿與素材文件
+design/
+style-guide.md
+README-template.md
+
+# 不上傳設計原檔（Figma / Sketch / XD）
+*.fig
+*.sketch
+*.xd
+
+# Avoid your project being littered with annoying .DS_Store files!
+.DS_Store
+.prettierignore
+
+# ---------------------------------
+#       Node / 前端開發通用規則
+# ---------------------------------
+
 # Logs
 logs
 *.log
