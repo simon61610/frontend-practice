@@ -32,7 +32,7 @@ function caculate(){
     // 檢查是否有小數點
     ans = String(ans).indexOf('.') > -1 ? ans.toFixed(2) : ans
 
-    const ansStr = `${num1} ${operator} ${num2} = ${ans}`
+    const ansStr = `${num1} ${operator} ${num2 > 0 ? num2 : ('(' + num2 + ')')} = ${ans}`
 
     const result = document.querySelector('.result')
     const p = document.createElement('p')
