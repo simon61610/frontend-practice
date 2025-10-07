@@ -1,0 +1,62 @@
+
+/* ==================== 計算機 ==================== */
+.calculator-box {}
+
+.calculator-box legend {}
+
+.calculator {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.num1, .num2, .operators {
+    width: 60px;
+}
+
+.num1 {}
+
+.operators {}
+
+.operators option {}
+
+.num2 {}
+
+#caculateBtn, #cleanResultBtn {
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+#caculateBtn {
+    background-color: #5fae62;
+}
+
+#cleanResultBtn {
+    background-color: rgb(255, 87, 87);
+}
+
+#caculateBtn:hover {
+    background-color: #00ab03;
+}
+
+#cleanResultBtn:hover {
+    background-color: rgb(255, 19, 19);
+}
+
+/* ==================== 結果 ==================== */
+.result-box {}
+
+.result-box legend {}
+
+.countLines {}
+
+.result {}
+
+.result p {
+    margin: 12px 0;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator-Level 1</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+
+    <fieldset class="calculator-box">
+        <legend>基本計算機</legend>
+
+        <section class="calculator">
+            <!-- caculate -->
+            <input type="number" class="num1" value="0">
+
+            <select class="operators">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="×">×</option>
+                <option value="÷">÷</option>
+            </select>
+
+            <input type="number" class="num2" value="0">
+            
+            <button id="caculateBtn">計算</button>
+            <button id="cleanResultBtn">清除結果</button>
+        </section>
+
+    </fieldset>
+
+    <fieldset class="result-box">
+        <legend>結果</legend>
+        <p class="countLines">目前 <span>0</span> 筆，最多 5 筆，會自動清除。</p>
+        <section class="result"></section>
+    </fieldset>
+
+</body>
+
+</html>
