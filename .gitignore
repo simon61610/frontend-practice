@@ -13,7 +13,6 @@ README-template.md
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
-.prettierignore
 
 # ---------------------------------
 #       Node / 前端開發通用規則
