@@ -9,20 +9,20 @@
 
 /** 已知資料 */
 const user = {
-  name: "Tom",
+  name: 'Tom',
   age: 20
 }
 
 // ==================================================
 // Ans:
-const proxyUser = new Proxy (user, {
-  get(target, prop, receiver){
+const proxyUser = new Proxy(user, {
+  get(target, prop, receiver) {
     const value = Reflect.get(target, prop, receiver)
     console.log(`取得 ${prop} 的資料為 ${value}`)
     return value
   },
-  
-  set(target, prop, value, receiver){
+
+  set(target, prop, value, receiver) {
     const oldValue = target[prop]
     console.log(`修改 ${prop} 從 ${oldValue} 變成 ${value}`)
     return Reflect.set(target, prop, value, receiver)
@@ -35,7 +35,3 @@ proxyUser.name = 'Simon'
 console.log(proxyUser.name)
 proxyUser.age = 29
 console.log(proxyUser.age)
-
-
-
-

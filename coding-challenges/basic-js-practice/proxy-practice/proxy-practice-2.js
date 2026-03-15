@@ -18,31 +18,30 @@
 
 /** 已知資料 */
 const user = {
-  name: "Tom",
+  name: 'Tom',
   age: 20
 }
 
 // ==================================================
 // Ans:
 const proxyUser = new Proxy(user, {
-    set(target, prop, value, receiver){
-        const allowModify = () => {
-            console.log(`修改 ${prop} 從 ${target[prop]} 變成 ${value}`)
-            return Reflect.set(target, prop, value, receiver)
-        }
-        const forbidModify = () => {
-            console.log(`${prop} 不存在，禁止新增`)
-            return false
-        }
-
-        return prop in target ? allowModify() : forbidModify()
+  set(target, prop, value, receiver) {
+    const allowModify = () => {
+      console.log(`修改 ${prop} 從 ${target[prop]} 變成 ${value}`)
+      return Reflect.set(target, prop, value, receiver)
     }
-})
+    const forbidModify = () => {
+      console.log(`${prop} 不存在，禁止新增`)
+      return false
+    }
 
+    return prop in target ? allowModify() : forbidModify()
+  }
+})
 
 // ==================================================
 
 proxyUser.age = 25
-proxyUser.gender = "male"
+proxyUser.gender = 'male'
 
 console.log(user)
