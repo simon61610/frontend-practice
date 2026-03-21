@@ -20,7 +20,7 @@ function lovefunc(flower1, flower2){
 
 
 /* ==================== 解法參考 ==================== */
-function lovefunc(flower1, flower2){
+function lovefuncRef(flower1, flower2){
   return flower1 % 2 !== flower2 % 2;
 }
 

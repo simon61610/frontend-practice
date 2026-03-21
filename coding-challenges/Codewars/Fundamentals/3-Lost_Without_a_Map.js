@@ -16,7 +16,7 @@ function maps(arr){
 
 /* ==================== 解法參考 ==================== */
 // 用 for 迴圈寫法
-function maps(x){
+function mapsRef(x){
     //return x.map(el => el * 2);
     let arr = [];
     for(let i = 0; i < x.length; i++){
