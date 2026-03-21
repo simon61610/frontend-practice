@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8" />
+    <title>猜數字遊戲</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./script.js"></script>
+  </head>
+
+  <body>
+    <h1>猜數字遊戲</h1>
+
+    <p>
+      我們已經選好一個 1 到 100 之間的隨機數字。看看你是否能在 10
+      次或更少的回合內猜中。我們會告訴你猜的數字是太高還是太低。
+    </p>
+
+    <div class="form">
+      <label for="guessField">輸入你的猜測：</label
+      ><input type="number" min="1" max="100" required id="guessField" class="guessField" />
+      <input type="submit" value="送出猜測" class="guessSubmit" />
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+  </body>
+</html>
